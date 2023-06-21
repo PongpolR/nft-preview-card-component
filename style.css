@@ -6,6 +6,7 @@
     flex-direction: column;
     min-height: 100vh;
     justify-content: center;
+    font-family: 'outfit';
   }
   main {
     display: flex;
@@ -17,10 +18,11 @@
     padding: 2rem;
   }
   .border {
-    background: hsl(215, 32%, 27%);
+    background: hsl(217, 54%, 11%);
     border-radius: 20px;
     padding: 0.8rem;
     padding-top: 0rem;
+    padding-bottom: 2rem;
   }
   .card {
     background: hsl(216, 50%, 16%);
@@ -28,35 +30,80 @@
     padding: 1.2rem;
   }
   .test {
-    width: 240px;
+    width: 280px;
   }
   .test img {
-    width: 240px;
+    width: 280px;
     display: block;
     border-radius: 15px;
   }
   .header {
+    padding: 1rem 0rem;
+    font-size: 21px;
+    font-weight: 600;
     color: white;
   }
   .section {
+    font-size: 18px;
+    font-weight: 300;
     color: hsla(215, 51%, 70%, 0.7);
     white-space: pre;
     width: 80%;
   }
   section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
     justify-content: space-between;
   }
   .left {
+    width: 50%;
+    display: flex;
+    justify-content: left;
     color: hsl(178, 100%, 50%);
   }
+  .left img {
+    height: 100%;
+  }
+  .left div {
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 0.5rem;
+  }
   .right {
+    width: 50%;
+    display: flex;
+    justify-content: right;
     color: hsla(215, 51%, 70%, 0.7);
   }
+  .right div {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 0.4rem;
+  }
+  .right img {
+    height: 100%;
+  }
   footer {
+    display: flex;
+    justify-content: left;
     color: hsla(215, 51%, 70%, 0.7);
+  }
+  footer img {
+    margin-top: 0.5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 100%;
+  }
+  footer p {
+    margin-bottom: 1rem;
+    padding-left: 0.7rem;
   }
   footer span {
     color: white;
+  }
+  hr {
+    border: 1px solid hsl(215, 32%, 27%);
   }
 }
