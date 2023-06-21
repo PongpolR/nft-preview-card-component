@@ -1,12 +1,8 @@
-/* desktop */
-@media(min-width: 376px) {
+@media all {
   body {
     background: hsl(217, 54%, 11%);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: center;
     font-family: 'outfit';
+    min-height: 100vh;
   }
   main {
     display: flex;
@@ -29,10 +25,7 @@
     border-radius: 20px;
     padding: 1.2rem;
   }
-  .test {
-    width: 280px;
-  }
-  .test img {
+  picture img {
     width: 280px;
     display: block;
     border-radius: 15px;
@@ -56,32 +49,32 @@
     display: flex;
     justify-content: space-between;
   }
-  .left {
+  .left-side {
     width: 50%;
     display: flex;
     justify-content: left;
     color: hsl(178, 100%, 50%);
   }
-  .left img {
+  .left-side img {
     height: 100%;
   }
-  .left div {
+  .left-side div {
     font-size: 16px;
     font-weight: 600;
     padding-left: 0.5rem;
   }
-  .right {
+  .right-side {
     width: 50%;
     display: flex;
     justify-content: right;
     color: hsla(215, 51%, 70%, 0.7);
   }
-  .right div {
+  .right-side div {
     font-size: 16px;
     font-weight: 400;
     padding-left: 0.4rem;
   }
-  .right img {
+  .right-side img {
     height: 100%;
   }
   footer {
@@ -105,5 +98,28 @@
   }
   hr {
     border: 1px solid hsl(215, 32%, 27%);
+  }
+}
+
+/* desktop */
+@media(min-width: 376px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* mobile */
+@media(max-width: 375px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  main {
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
   }
 }
